@@ -4,6 +4,8 @@
  */
 package mundo;
 
+import dao.EstudianteDAO;
+import dao.SolicitudDAO;
 import java.sql.Date;
 import java.util.List;
 import java.util.Scanner;
@@ -14,7 +16,7 @@ public class Main {
         // Crear conexión y DAOs
         EstudianteDAO estudianteDAO = new EstudianteDAO();
         SolicitudDAO solicitudDAO = new SolicitudDAO();
-        Sistema sistema = new Sistema(solicitudDAO, estudianteDAO);
+        ProxySistema sistema = new ProxySistema();
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
@@ -70,14 +72,6 @@ public class Main {
                         Solicitud solicitud = new Solicitud(0, estudianteId, monto, cuotas, new Date(System.currentTimeMillis()), "Pendiente");
                         sistema.procesarSolicitud(solicitud, estudianteId);
 
-                        // Mostrar el resultado de la solicitud
-                        System.out.println("\nResultado de la solicitud:");
-                        System.out.println("Estado: " + solicitud.getEstado());
-                        if (solicitud.getEstado().equals("Aprobado")) {
-                            System.out.println("¡Solicitud aprobada con éxito!");
-                        } else {
-                            System.out.println("La solicitud fue rechazada. Verifique los requisitos e intente nuevamente.");
-                        }
                         break;
 
                     case 3:

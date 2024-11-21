@@ -4,9 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/Solicitud.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/ProxySistema.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/Estudiante.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/Main.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/EstudianteDAO.java</file>
+            <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/IOperacionSistema.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/SolicitudDAO.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/Sistema.java</file>
             <file>file:/C:/Users/ACER/Documents/NetBeansProjects/Credipiloto/src/mundo/Conexion.java</file>
